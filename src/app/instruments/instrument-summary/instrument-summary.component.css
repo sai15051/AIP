@@ -1,0 +1,60 @@
+.header-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 73px; /* Keep height at 50px */
+    padding: 0 12px; /* Minimal padding */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between filter and button */
+}
+.mdc-text-field--filled {
+    background-color:white
+}
+
+
+.filter-field {
+    margin-top:20px;
+    margin-right: 12px;
+    min-width: 150px; /* Adjust the width */
+    max-width: 200px; /* Restrict the max width */
+    /* height:100% */
+
+}
+
+.mat-form-field {
+    height: 36px; /* Set fixed height for input */
+    margin: 0; /* Remove margins */
+}
+
+.mat-form-field-wrapper,
+.mat-form-field-flex {
+    height: 36px; /* Match the input height */
+    padding: 0; /* Remove any padding */
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    top: 0; /* Align the outline within the container */
+}
+
+input.mat-input-element {
+    height: 24px; /* Adjust the input element height */
+    line-height: 24px; /* Align the text inside the input */
+    padding: 0; /* Remove padding around the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto; /* Let it grow on small screens */
+    }
+
+    .filter-field {
+        margin-bottom: 16px;
+        margin-right: 0;
+        width: 100%;
+        max-width: none;
+    }
+}

@@ -1,0 +1,135 @@
+
+
+.success_icon {
+    color: green; /* Set the color to green */
+    font-size: 20px; /* Adjust the size of the icon */
+     /* Adds some space between the icon and the text */
+    vertical-align: middle; /* Aligns the icon vertically with the text */
+}
+
+
+
+.labConnect-logo {
+    height: 46px;
+    width: 120px;
+    align-items: center;
+}
+.example-spacer {
+    flex-grow: 1;
+}
+.labConnect-name{
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+    
+}
+.top-nav-col{
+    background: #090979 !important;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height:60px;
+    z-index: 1000; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+.sidenav {
+    height: calc(100vh - 60px);
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background: #090979 !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    padding-top: 40px;
+    padding-bottom :40px; ;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fbfbfcf6;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* When the sidenav is open, set its width to 250px */
+  .sidenav.open {
+    width: 250px;
+  }
+  
+  /* Sub-menu styling */
+  .sub-menu {
+    padding-left: 30px;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+  }
+  
+  .sub-menu a {
+    font-size: 18px;
+    color: #f1f1f1;
+
+  }
+  
+  /* Main content */
+  .main-content {
+    margin-top: 60px; /* Ensure main content starts below fixed navbar */
+    margin-bottom: 40px;
+    transition: margin-left 0.5s;
+    padding: 16px;
+    overflow-y: auto; 
+   
+  }
+  
+  /* Shift main content when sidenav is open */
+  .main-content.shifted {
+    margin-left: 250px;
+  }
+  
+  /* Hamburger icon */
+  .hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+  }
+  .todo-icon {
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .footer {
+    background: #090979 !important; /* Optional: gives a background color to footer */
+    padding: 10px; /* Adds some spacing */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fixes footer to the bottom of the viewport */
+    bottom: 0; /* Aligns the footer to the bottom */
+    left: 0; /* Aligns the footer to the left */
+    right: 0; /* Aligns the footer to the right */
+    z-index: 1000; /* Ensures the footer is above other content */
+    color: #f1f1f1;
+    height: 40px;
+  }
+
+  
